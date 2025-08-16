@@ -1,4 +1,12 @@
-var user: object = {
+type User = {
+    name: string,
+    age:number,
+isActive:boolean,
+hobbies: string[],
+address:string | object,
+greet: Function,
+}
+var user: User = {
     name: "John Doe",
     age: 30,
     isActive: true,
