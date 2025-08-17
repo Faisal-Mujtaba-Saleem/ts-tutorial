@@ -18,4 +18,3 @@ var decimalNum = 0.123; // This is a decimal number in TypeScript
 var hexDecNum = 0x123; // This is a hexadecimal number in TypeScript
 // binary numbers can be represented in TypeScript using the following syntax:
 var binaryNum = 0b001; // This is a binary number in Type
-//# sourceMappingURL=index.js.map

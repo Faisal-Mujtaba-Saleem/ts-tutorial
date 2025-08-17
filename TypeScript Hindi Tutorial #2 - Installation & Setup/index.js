@@ -16,4 +16,3 @@ var user = {
 };
 console.log(user);
 // user = "This is a string now"; // This will cause a type error in TypeScript
-//# sourceMappingURL=index.js.map
