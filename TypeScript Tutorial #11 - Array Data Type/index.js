@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("TypeScript Tutorial #11: Array Data Type");
-// Arrays are the collection of elements of the same type.
+// Arrays are the collection of elements of the same type in TS generally but can hold multiple types if explicitly defined.
 // There are 2 conventions to define an array in TypeScript:
 // 1. Using the type followed by square brackets,
 let users = ["Faiq", "Ali", "Talha", "Hasan"];
