@@ -1,3 +1,5 @@
+console.log("TypeScript Tutorial #4: Number Data Type Explained");
+
 var num1:number = 12;
 var num1:number = 12.5;
 

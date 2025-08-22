@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log("TypeScript Tutorial #2: Installation & Setup");
 var user = {
     name: "John Doe",
     age: 30,

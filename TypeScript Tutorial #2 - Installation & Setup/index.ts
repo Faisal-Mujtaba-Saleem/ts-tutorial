@@ -1,3 +1,5 @@
+console.log("TypeScript Tutorial #2: Installation & Setup");
+
 type User = {
     name: string,
     age:number,

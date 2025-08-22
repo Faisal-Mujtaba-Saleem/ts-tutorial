@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log("TypeScript Tutorial #4: Number Data Type Explained");
 var num1 = 12;
 var num1 = 12.5;
 var num2 = 20; // Changing this variable's declaration keyword to let or const, i.e. let/const num2:number = 20; can cause a redeclaration error in TypeScript because this variable saves in index.js after transpiling from here, i.e. index.ts and it takes the whole dir or both index.js & index.ts as a single file. To resolve this we have to do some changes in tsconfig.json file which will be discussed in another tutorial.
