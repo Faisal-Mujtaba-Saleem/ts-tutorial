@@ -1,15 +1,31 @@
 console.log("TypeScript Tutorial #11: Array Data Type");
 
-// Arrays are the collection of elements of the same type in TS generally but can hold multiple types if explicitly defined.
-// There are 2 conventions to define an array in TypeScript:
+/**
+ Array Data Type:
+
+1. Arrays are the collection of elements of the same type in TS generally but can hold multiple types if explicitly defined.
+
+2. There are 2 conventions to define an array type in TypeScript:
+    a. Using the type followed by square brackets, i.e. <<T>>[],
+    b. Using the Array generic type, i.e. Array<T>.
+
+3. ReadOnly Arrays: 
+    a. We can create ReadOnly arrays in TS using the ReadonlyArray<T> generic type, which prevents modification of the array elements.
+    b. This is useful when we want to ensure that the array elements remain unchanged after their initial assignment
+*/
+
+// Defining arrays using both conventions:
+
 // 1. Using the type followed by square brackets,
 let users: string[] = ["Faiq", "Ali", "Talha", "Hasan"];
 let ids: number[] = [1, 2, 3, 4, 5];
+
 // 2. Using the Array generic type,
 let students: Array<string> = ["Sohaib", "Huzaifa1", "Huzaifa2", "Saif"];
 let marks: Array<number> = [10, 20, 30, 40, 50];
 
 // ReadOnly Arrays and their use case:
+
 marks[0] = 100; // This is valid
 console.log("Marks before ReadOnly:", marks);
 

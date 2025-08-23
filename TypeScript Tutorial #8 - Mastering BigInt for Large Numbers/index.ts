@@ -1,12 +1,15 @@
 console.log("TypeScript Tutorial #8: Mastering BigInt for Large Numbers");
+/**
+ BigInt Data Type:
 
-// The BigInt Data Type comes in handy when dealing with large pos. / neg integers that exceed the limits of the standard number type in JavaScript/TypeScript.
+1. The BigInt Data Type comes in handy when dealing with large pos. / neg integers that exceed the limits of the standard number type in JavaScript/TypeScript.
 
-// The maximum/minimum safe integer in JS/TS is -/+(2^53 -1), which is approximately ±9.007 x 10^15, which is equals to ±9007199254740991.
+2. The maximum/minimum safe integer in JS/TS is -/+(2^53 -1), which is approximately ±9.007 x 10^15, which is equals to ±9007199254740991.
+ */
 
-// Maximum safe integer in JavaScript
-const maxSafeInteger:number = Number.MAX_SAFE_INTEGER;
-const minSafeInteger:number = Number.MIN_SAFE_INTEGER;
+// Maximum safe integer in JS/TS
+const maxSafeInteger: number = Number.MAX_SAFE_INTEGER;
+const minSafeInteger: number = Number.MIN_SAFE_INTEGER;
 // Logging the maximum and minimum safe integers
 console.log("Max Safe Integer:", maxSafeInteger);
 console.log("Min Safe Integer:", minSafeInteger);
@@ -14,14 +17,13 @@ console.log("Min Safe Integer:", minSafeInteger);
 // Demonstrating the use of BigInt for large integers
 
 let x = 1;
-let y = -1; 
+let y = -1;
 // Logging the values of x and y
 console.log(`x: ${x}, y: ${y}`);
 
 // Logging the values of x and y summed with max/min safe integers
 console.log("Max Safe Integer + x:", maxSafeInteger + x);
 console.log("Min Safe Integer + y:", minSafeInteger + y);
-
 
 x = 2;
 y = -2;
@@ -48,15 +50,19 @@ console.log(`BigInt x: ${bigIntX}, BigInt y: ${bigIntY}`);
 // console.log(`Min Safe Integer + BigInt y: ${minSafeInteger + bigIntY}`);
 
 // To add BigInt values to max/min safe integers, we need to convert the max/min safe integers to BigInt as well.
-console.log(`Max Safe Integer in BigInt + BigInt x: ${BigInt(maxSafeInteger) + bigIntX}`);
-console.log(`Min Safe Integer in BigInt + BigInt y: ${BigInt(minSafeInteger) + bigIntY}`);
+console.log(
+  `Max Safe Integer in BigInt + BigInt x: ${BigInt(maxSafeInteger) + bigIntX}`
+);
+console.log(
+  `Min Safe Integer in BigInt + BigInt y: ${BigInt(minSafeInteger) + bigIntY}`
+);
 
 // We can also convert also convert a Number into BigInt by fixing 'n' at the end of the number.
 
 // Example of BigInt from Number with 'n'
 const bigIntFromNumber_n = 1234567890123456789012345678901234567890n; // Note the 'n' at the end
 
-// Logging the BigInt from Number attached with 'n' 
-console.log(`bigIntFromNumber_n ${bigIntFromNumber_n}, type of bigIntFromNumber_n: ${typeof bigIntFromNumber_n}`);
-
-
+// Logging the BigInt from Number attached with 'n'
+console.log(
+  `bigIntFromNumber_n ${bigIntFromNumber_n}, type of bigIntFromNumber_n: ${typeof bigIntFromNumber_n}`
+);
