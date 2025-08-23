@@ -9,11 +9,12 @@ console.log("Folders in the current directory:", directory);
 
 for (const file of directory) {
   const isfolder = file?.isDirectory();
-  if (isfolder) {
+  const renamaeablefolderRegex = /^TypeScript Hindi Tutorial #\d+ .+/;
+  if (isfolder && renamaeablefolderRegex.test(file.name)) {
     console.log(`folder: ${file.name}`);
     const folderNewName = file.name.replace(
-      "TypeScript Hindi Tutorial",
-      "TypeScript Tutorial"
+      /TypeScript Hindi Tutorial #(\d+) (.+)/,
+      "TypeScript Tutorial #$1 - $2"
     );
     console.log(`Renaming to: ${folderNewName}`);
     fs.rename(`${cd}/${file.name}`, `${cd}/${folderNewName}`);
