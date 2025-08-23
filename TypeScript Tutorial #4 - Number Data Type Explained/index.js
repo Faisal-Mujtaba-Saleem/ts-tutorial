@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("TypeScript Tutorial #4: Number Data Type Explained");
+// Number Data Type:
 var num1 = 12;
 var num1 = 12.5;
-var num2 = 20; // Changing this variable's declaration keyword to let or const, i.e. let/const num2:number = 20; can cause a redeclaration error in TypeScript because this variable saves in index.js after transpiling from here, i.e. index.ts and it takes the whole dir or both index.js & index.ts as a single file. To resolve this we have to do some changes in tsconfig.json file which will be discussed in another tutorial.
+var num2 = 20; // Changing this variable's declaration keyword to let or const, i.e. let/const num2:number = 20; can cause a redeclaration error in TypeScript because this variable saves in index.js after transpiling from here, i.e. index.ts and it takes the whole dir or both index.js & index.ts as a single file. To resolve this we have to do some changes in tsconfig.json file i.e. we have to set the "declaration" property to true in tsconfig.json file, which will generate a .d.ts file for this file and then we can use let/const keyword to declare the variable in this file without causing a redeclaration error.
 var num_ = 10;
 var num_str = "10";
 // var total:number = num_ + num_str; // This will give an error in TS because num_ is a number and num_str is a string, so they cannot be added directly. TypeScript enforces type safety.

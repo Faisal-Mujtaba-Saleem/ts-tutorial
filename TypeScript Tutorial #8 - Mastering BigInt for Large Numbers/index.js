@@ -1,9 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("TypeScript Tutorial #8: Mastering BigInt for Large Numbers");
-// The BigInt Data Type comes in handy when dealing with large pos. / neg integers that exceed the limits of the standard number type in JavaScript/TypeScript.
-// The maximum/minimum safe integer in JS/TS is -/+(2^53 -1), which is approximately ±9.007 x 10^15, which is equals to ±9007199254740991.
-// Maximum safe integer in JavaScript
+/**
+ BigInt Data Type:
+
+1. The BigInt Data Type comes in handy when dealing with large pos. / neg integers that exceed the limits of the standard number type in JavaScript/TypeScript.
+
+2. The maximum/minimum safe integer in JS/TS is -/+(2^53 -1), which is approximately ±9.007 x 10^15, which is equals to ±9007199254740991.
+ */
+// Maximum safe integer in JS/TS
 const maxSafeInteger = Number.MAX_SAFE_INTEGER;
 const minSafeInteger = Number.MIN_SAFE_INTEGER;
 // Logging the maximum and minimum safe integers
@@ -40,5 +45,5 @@ console.log(`Min Safe Integer in BigInt + BigInt y: ${BigInt(minSafeInteger) + b
 // We can also convert also convert a Number into BigInt by fixing 'n' at the end of the number.
 // Example of BigInt from Number with 'n'
 const bigIntFromNumber_n = 1234567890123456789012345678901234567890n; // Note the 'n' at the end
-// Logging the BigInt from Number attached with 'n' 
+// Logging the BigInt from Number attached with 'n'
 console.log(`bigIntFromNumber_n ${bigIntFromNumber_n}, type of bigIntFromNumber_n: ${typeof bigIntFromNumber_n}`);
