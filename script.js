@@ -20,7 +20,7 @@ import fs from "fs/promises";
       );
       console.log(`Renaming to: ${folderNewName}`);
       fs.rename(`${cd}/${file.name}`, `${cd}/${folderNewName}`);
-      console.log(`Renamed ${file.name} to ${folderNewName}`);
+      console.log(`Renamed '${file.name}' to '${folderNewName}'`);
     } else {
       console.log(`Skipping: ${file.name}`);
     }
@@ -30,4 +30,4 @@ import fs from "fs/promises";
       console.error("Error:", error);   
   }
 }
-)(/TypeScript Tutorial (\d+) - - (.+)/, "TypeScript Tutorial $1 - $2")
+)(/TypeScript Hindi Tutorial #(\d+) (.+)/, "TypeScript Tutorial $1 - $2")

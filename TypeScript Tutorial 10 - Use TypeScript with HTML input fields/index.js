@@ -1,5 +1,5 @@
 "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("TypeScript Tutorial #10: Use TypeScript with HTML input fields");
 document.querySelector("form")?.addEventListener("submit", getInfo);
 function getInfo(e) {
